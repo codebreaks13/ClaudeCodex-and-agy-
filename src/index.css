@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --ground: #1a1f2b;
+  --panel: #212838;
+  --raised: #2a3246;
+  --line: #3a4560;
+  --ink: #e7ebf2;
+  --muted: #9aa5ba;
+  --qwen: #a797ff;
+  --agy: #62bdf2;
+  --claude: #eaae52;
+  --astra: #6fd6a8;
+  --sol: #f28fb4;
+  --danger: #f08a8a;
+  --focus: #c9d4ff;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --ground: #eef0f4;
+    --panel: #f8f9fb;
+    --raised: #ffffff;
+    --line: #cfd5e1;
+    --ink: #1b2231;
+    --muted: #5a6478;
+    --qwen: #5b46d6;
+    --agy: #0f6fa6;
+    --claude: #95600f;
+    --astra: #1b7a52;
+    --sol: #a8326a;
+    --danger: #b3261e;
+    --focus: #2c3f9e;
+    color-scheme: light;
+  }
+}
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "DejaVu Sans Mono", monospace;
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--ground); color: var(--ink); font-family: var(--font-sans); }
+
+@layer base {
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+}
+
+.baton-live { animation: baton 1.6s ease-in-out infinite; }
+@keyframes baton { 50% { box-shadow: 0 0 0 7px color-mix(in srgb, currentColor 18%, transparent); } }
+@media (prefers-reduced-motion: reduce) { .baton-live { animation: none; } }
+
+.scroll-thin { scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+
+@media (min-width: 1024px) {
+  .cc-side { overflow: hidden; min-width: 0; }
+  .cc-left { width: var(--left-width); }
+  .cc-right { width: var(--right-width); }
+  .cc-side > * { min-width: 180px; }
+  .cc-right { overflow-y: auto; }
+}

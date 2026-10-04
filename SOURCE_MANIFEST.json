@@ -1,0 +1,43 @@
+{
+  "edition": "limited-public",
+  "project": "ClaudeCodex",
+  "prepared": "2026-10-05",
+  "files": [
+    {
+      "path": "src/Activity.tsx",
+      "sha256": "a9a86a81a7ffa4ca869f7d0ce049ad136ea4abc66ee254a4454e386959f9205c"
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "a73feea7cc7f20cb5ade051da2ba25b996c20dbae61768be8465ad8c968a9aac"
+    },
+    {
+      "path": "src/Chat.tsx",
+      "sha256": "3a40f9a1a43a65754e9c2f49d1d5b0aedcecc19fcec3fb4225ab9894f4ea1f9c"
+    },
+    {
+      "path": "src/Relay.tsx",
+      "sha256": "0a2bb3c3486de72580c48eee82cdd6cc90f733df9e0ddc46351219424aa5193f"
+    },
+    {
+      "path": "src/Sidebar.tsx",
+      "sha256": "fb4bf057deedffe24ba64559404130f11451664ea7f3e18ec38c0e1a679e67b2"
+    },
+    {
+      "path": "src/api.ts",
+      "sha256": "41df7ceb186edc43cd5eefb9a564c72545866a6b515e0371721e66ed4db64e0a"
+    },
+    {
+      "path": "src/demoApi.ts",
+      "sha256": "08a91b3e6090b35dbb2fd80d325716abda63129bad443efa09d170c4b4095768"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "3817a32ba111aeb6a86986870f36fc95316c81947fc9b21af55daa212f90d46a"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "770a6c6e5776f6e4dca2c8c0efefa99c5021521ec0456345e725ba05a7c2effe"
+    }
+  ]
+}
